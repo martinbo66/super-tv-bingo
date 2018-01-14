@@ -23,11 +23,15 @@ This seed repo serves as an Angular 2 starter for anyone looking to get up and r
 ### Quick start
 
 # install the dependencies with npm
+```
 $ npm install
+```
 
 # start the server
+```
 $ npm start
 ```
+
 go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 # Table of Contents
@@ -49,7 +53,6 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 What you need to run this app:
 * `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
-* Ensure you're running Node (`v5.x.x`+) and NPM (`3.x.x`+)
 * `npm start`
 
 It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The application can be checked at `http://localhost:8080`.
