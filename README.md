@@ -1,17 +1,8 @@
-# ng2-bootstrap-seed
+# super-tv-bingo
 
-This seed uses [https://github.com/preboot/angular2-webpack](https://github.com/preboot/angular2-webpack) seed as its base. It has been modified to work with [Angular CLI Tools](https://www.npmjs.com/package/angular-cli-tools) and [ng-bootstrap](https://ng-bootstrap.github.io/#/home) to create an Angular 2 + Bootstrap starter seed that can be used right out of the box.
+Play Bingo with TV words and phrases
 
-To get started with this seed you have 2 options:
-
-1. Go to [Angular CLI Tools](https://www.npmjs.com/package/angular-cli-tools) for a quick way to create Angular 2 projects from your command line
-2. Clone this repo
-
-Some things that were modified from the original seed:
-
- * `src` folder more closely follows ng2 style guide
- * support for lazy loaded routes
- * `package.json` files includes: [font-awesome](http://fontawesome.io/icons/), [bootstrap 4](https://v4-alpha.getbootstrap.com/), [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
+`package.json` files includes: [font-awesome](http://fontawesome.io/icons/), [bootstrap 4](https://v4-alpha.getbootstrap.com/), [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
 
 Full credit to the team at [https://github.com/preboot/angular2-webpack](https://github.com/preboot/angular2-webpack). Rest of the readme + instructions come from their seed:
 
@@ -30,15 +21,6 @@ This seed repo serves as an Angular 2 starter for anyone looking to get up and r
 >Warning: Make sure you're using the latest version of Node.js and NPM
 
 ### Quick start
-
-> Clone/Download the repo then edit `app.ts` inside [`/src/app/app.component.ts`](/src/app/app.component.ts)
-
-```bash
-# clone our repo
-$ git clone https://github.com/preboot/angular2-webpack.git my-app
-
-# change directory to your app
-$ cd my-app
 
 # install the dependencies with npm
 $ npm install
@@ -68,17 +50,6 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 What you need to run this app:
 * `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
 * Ensure you're running Node (`v5.x.x`+) and NPM (`3.x.x`+)
-
-## Installing
-
-* `fork` this repo
-* `clone` your fork
-* `npm install` to install all dependencies
-
-## Developing
-
-After you have installed all dependencies you can now start developing with:
-
 * `npm start`
 
 It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The application can be checked at `http://localhost:8080`.
@@ -120,43 +91,6 @@ You can now go to `/dist` and deploy that to your server!
 You can generate api docs (using [TypeDoc](http://typedoc.org/)) for your code with the following:
 
 * `npm run docs`
-
-# FAQ
-
-#### Do I need to add script / link tags into index.html ?
-
-No, Webpack will add all the needed Javascript bundles as script tags and all the CSS files as link tags. The advantage is that you don't need to modify the index.html every time you build your solution to update the hashes.
-
-#### How to include external angular 2 libraries ?
-
-It's simple, just install the lib via npm and import it in your code when you need it. Don't forget that you need to configure some external libs in the [bootstrap](https://github.com/preboot/angular2-webpack/blob/master/src/main.ts) of your application.
-
-#### How to include external css files such as bootstrap.css ?
-
-Just install the lib and import the css files in [vendor.ts](https://github.com/preboot/angular2-webpack/blob/master/src/vendor.ts). For example this is how to do it with bootstrap:
-
-```sh
-npm install bootstrap@next --save
-```
-
-And in [vendor.ts](https://github.com/preboot/angular2-webpack/blob/master/src/vendor.ts) add the following:
-
-```ts
-import 'bootstrap/dist/css/bootstrap.css';
-```
-
-# TypeScript
-
-> To take full advantage of TypeScript with autocomplete you would have to use an editor with the correct TypeScript plugins.
-
-## Use a TypeScript-aware editor
-
-We have good experience using these editors:
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Webstorm 11+](https://www.jetbrains.com/webstorm/download/)
-* [Atom](https://atom.io/) with [TypeScript plugin](https://atom.io/packages/atom-typescript)
-* [Sublime Text](http://www.sublimetext.com/3) with [Typescript-Sublime-Plugin](https://github.com/Microsoft/Typescript-Sublime-plugin#installation)
 
 # License
 
