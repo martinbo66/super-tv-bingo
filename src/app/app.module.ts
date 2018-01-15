@@ -6,6 +6,7 @@ import {routing} from './app.routing';
 import {CoreModule} from './core/core.module';
 import {AppLayoutModule} from './views/app-layout/app-layout.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ApiService } from './core/services/api.service';
 
 @NgModule({
     imports: [
@@ -18,7 +19,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     declarations: [
         AppComponent,
     ],
-    providers: [],
+    providers: [
+        ApiService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

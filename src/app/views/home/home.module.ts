@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { routing } from './home.routing';
 import { HomeComponent } from './home.component';
+import { ShowListComponent } from '../../show-list/show-list.component';
 
 @NgModule({
     imports: [
@@ -10,7 +11,8 @@ import { HomeComponent } from './home.component';
     ],
     providers: [],
     declarations: [
-        HomeComponent
+        HomeComponent,
+        ShowListComponent
     ],
     exports: []
 })

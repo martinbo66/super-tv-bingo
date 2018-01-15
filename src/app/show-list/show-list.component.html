@@ -1,0 +1,23 @@
+<div>
+    <h3>All of the shows should be listed below</h3>
+  
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Show Name</th>
+          <th scope="col">Bingo Variation</th>      
+          <th scope="col">Center Square</th>
+          <th scope="col">Phrase Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let show of shows">
+          <th scope="row">{{show.showTitle}}</th>
+          <td>{{show.gameTitle}} </td>      
+          <td>{{show.centerSquare}}</td>
+          <td>{{show.phrases.length}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
